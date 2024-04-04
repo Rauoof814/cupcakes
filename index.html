@@ -1,0 +1,39 @@
+<!--
+  Author: Abdul Rahmani
+  Date: 04/04/2024
+  Description: This page contains a form for ordering cupcakes as part of a fundraiser.
+  GitHub URL: https://github.com/Rauoof814/cupcakes.git
+-->
+
+
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cupcakes</title>
+    </head>
+    <body>
+
+    <form action="process.php" method="post">
+        <h1>Cupcake Fundraiser</h1>
+
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="Please input your name.">
+
+        <h2>Cupcake flavors:</h2>
+        <input type="checkbox" name="flavor[]" id="grasshopper" value="Grasshopper">
+        <label for="grasshopper">The Grasshopper</label><br>
+
+        <input type="checkbox" name="flavor[]" id="whiskey" value="Whiskey Maple Bacon">
+        <label for="whiskey">Whiskey Maple Bacon</label><br>
+
+        <!-- Repeat for other flavors -->
+
+        <input type="submit" value="Order">
+    </form>
+
+    </body>
+</html>
